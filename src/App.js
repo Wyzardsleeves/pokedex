@@ -2,11 +2,14 @@ import React from 'react';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import ClientMain from 'Components/ClientMain'
+import {BrowserRouter} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <ClientMain />
+      <BrowserRouter>
+        <ClientMain />
+      </BrowserRouter>
     </div>
   );
 }

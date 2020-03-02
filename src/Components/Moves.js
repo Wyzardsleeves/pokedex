@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
 
-function Foot(){
+function Moves(){
   return(
     <div>
-      <h3>This is from the Foot component</h3>
+      <h3>This is from the Moves component</h3>
     </div>
   )
 }
 
-export default Foot
+export default Moves

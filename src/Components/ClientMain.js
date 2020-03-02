@@ -1,7 +1,10 @@
 import React from 'react'
-import Pokemon from './Pokemon'
+import Pokedex from './Pokedex'
 import Head from './Head'
 import Foot from './Foot'
+import Moves from './Moves'
+import Stats from './Stats'
+import {Switch, Route} from 'react-router-dom'
 
 function ClientMain(){
   return(
@@ -10,7 +13,11 @@ function ClientMain(){
         <Head />
       </div>
       <div>
-        <Pokemon />
+        <Switch>
+          <Route path='/' render={Pokedex} exact/>
+          <Route path='/moves' render={Moves}/>
+          <Route path='/stats' render={Stats}/>
+        </Switch>
       </div>
       <div>
         <Foot />
