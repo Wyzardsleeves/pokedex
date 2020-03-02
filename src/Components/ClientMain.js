@@ -9,7 +9,7 @@ import {Switch, Route} from 'react-router-dom'
 function ClientMain(){
   return(
     <div>
-      <div>
+      <div className="head-background">
         <Head />
       </div>
       <div>
@@ -19,7 +19,7 @@ function ClientMain(){
           <Route path='/stats' render={Stats}/>
         </Switch>
       </div>
-      <div>
+      <div className="foot-background">
         <Foot />
       </div>
     </div>
