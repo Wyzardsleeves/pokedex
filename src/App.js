@@ -1,7 +1,7 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
 import './App.css';
-import ClientMain from 'Components/ClientMain'
+import Pokemon from 'Components/Pokemon'
 import {BrowserRouter} from 'react-router-dom'
 import 'materialize-css/dist/css/materialize.min.css' //had to add this in order to get materialize
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ClientMain />
+        <Pokemon />
       </BrowserRouter>
     </div>
   );
